@@ -4,7 +4,6 @@ import { V1AppModule } from '../../projects/v1/src/app/app.module';
 import { V2AppModule } from '../../projects/v2/src/app/app.module';
 
 const routes: Routes = [
-  { path: '', pathMatch: 'full', redirectTo: '/v1' },
   {
     path: 'v1',
     loadChildren: () => import('../../projects/v1/src/app/app.module').then(m => m.V1AppModule)
